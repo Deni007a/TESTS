@@ -139,9 +139,11 @@ npx jest path/to/file  # Запустить конкретный тест
   ✅ Проверка покрытия и пропущенных участков
   ✅ Тесты запускаются автоматически перед git push
 
-🧠 Частые ошибки и решения
-|Ошибка	                                        |Решение
-|Cannot use JSX unless the '--jsx' flag is...	  |Установи "jsx": "react-jsx" в tsconfig.app.json
-|Jest failed to parse a file... JSX not enabled	|Добавь babel.config.cjs с @babel/preset-react
-|Failed to parse jest.config.ts (ts-node)	      |Установи ts-node
-|JSX не работает с type: module	                |Используй .cjs для babel.config
+## 🧠 Частые ошибки и решения
+
+| Ошибка | Решение |
+|--------|---------|
+| `Cannot use JSX unless the '--jsx' flag is...` | Установи `"jsx": "react-jsx"` в `tsconfig.app.json` |
+| `Jest failed to parse a file... JSX not enabled` | Добавь `babel.config.cjs` с `@babel/preset-react` |
+| `Failed to parse jest.config.ts (ts-node)` | Установи `ts-node` |
+| `JSX не работает с type: module` | Используй `.cjs` для `babel.config` |
